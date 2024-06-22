@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "catanafinals", "catanafinals.csproj", "{6726DBD8-2B66-48DC-9655-6A83E0232E10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6726DBD8-2B66-48DC-9655-6A83E0232E10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6726DBD8-2B66-48DC-9655-6A83E0232E10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6726DBD8-2B66-48DC-9655-6A83E0232E10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6726DBD8-2B66-48DC-9655-6A83E0232E10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34752F8B-F862-4B97-81B1-7174650197FF}
+	EndGlobalSection
+EndGlobal
