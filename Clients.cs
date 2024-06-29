@@ -15,16 +15,23 @@ namespace catanafinals
     {
         public catanaswordEntities _context = new catanaswordEntities();
         private int _selectedClientId;
+     
 
         String FullName, firstname, lastname;
+      
         public Clients(List<CLINETINFO> _source)
         {
             InitializeComponent();
             cLINETINFOBindingSource.DataSource = _source;
         }
+
+        public Clients()
+        {
+        }
+
         private void Clients_Load(object sender, EventArgs e)
         {
-            
+            cLINETINFOBindingSource.DataSource = _context.CLINETINFOes.ToList();
         }
         public String getClientFullName(int clientId)
         {

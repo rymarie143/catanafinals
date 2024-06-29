@@ -57,7 +57,7 @@ namespace catanafinals
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmPaymentSchedule form = new frmPaymentSchedule(_selectedClientId, _selectedLoanID, textBox1.Text.Trim(), Term, clientLoanBindingSource);
+            frmPaymentSchedule form = new frmPaymentSchedule(_selectedLoanID);
             form.ShowDialog();
         }
 

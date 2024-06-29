@@ -31,18 +31,18 @@ namespace catanafinals
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.txtsearch = new System.Windows.Forms.TextBox();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.residencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cLINETINFOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.txtsearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLINETINFOBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -68,6 +68,46 @@ namespace catanafinals
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            this.lastNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // residencyDataGridViewTextBoxColumn
+            // 
+            this.residencyDataGridViewTextBoxColumn.DataPropertyName = "Residency_";
+            this.residencyDataGridViewTextBoxColumn.HeaderText = "Residency_";
+            this.residencyDataGridViewTextBoxColumn.Name = "residencyDataGridViewTextBoxColumn";
+            this.residencyDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            this.ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
+            this.ageDataGridViewTextBoxColumn.HeaderText = "Age";
+            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cLINETINFOBindingSource
+            // 
+            this.cLINETINFOBindingSource.DataSource = typeof(catanafinals.entities.CLINETINFO);
+            this.cLINETINFOBindingSource.CurrentChanged += new System.EventHandler(this.cLINETINFOBindingSource_CurrentChanged);
             // 
             // button1
             // 
@@ -126,46 +166,6 @@ namespace catanafinals
             this.txtsearch.Size = new System.Drawing.Size(161, 20);
             this.txtsearch.TabIndex = 6;
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // firstNameDataGridViewTextBoxColumn
-            // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            this.lastNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // residencyDataGridViewTextBoxColumn
-            // 
-            this.residencyDataGridViewTextBoxColumn.DataPropertyName = "Residency_";
-            this.residencyDataGridViewTextBoxColumn.HeaderText = "Residency_";
-            this.residencyDataGridViewTextBoxColumn.Name = "residencyDataGridViewTextBoxColumn";
-            this.residencyDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ageDataGridViewTextBoxColumn
-            // 
-            this.ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
-            this.ageDataGridViewTextBoxColumn.HeaderText = "Age";
-            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
-            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cLINETINFOBindingSource
-            // 
-            this.cLINETINFOBindingSource.DataSource = typeof(catanafinals.entities.CLINETINFO);
-            this.cLINETINFOBindingSource.CurrentChanged += new System.EventHandler(this.cLINETINFOBindingSource_CurrentChanged);
-            // 
             // Clients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -180,6 +180,7 @@ namespace catanafinals
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Clients";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clients";
             this.Load += new System.EventHandler(this.Clients_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

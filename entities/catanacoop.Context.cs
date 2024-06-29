@@ -25,10 +25,10 @@ namespace catanafinals.entities
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<ClientInfo> ClientInfoes { get; set; }
         public virtual DbSet<ClientLoan> ClientLoans { get; set; }
         public virtual DbSet<CLINETINFO> CLINETINFOes { get; set; }
         public virtual DbSet<Schedule> Schedules { get; set; }
         public virtual DbSet<Transact> Transacts { get; set; }
+        public virtual DbSet<LoanUserAccount> LoanUserAccounts { get; set; }
     }
 }

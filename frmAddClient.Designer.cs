@@ -146,6 +146,7 @@ namespace catanafinals
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmAddClient";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "add";
             this.Load += new System.EventHandler(this.frmAddClient_Load);
             this.ResumeLayout(false);

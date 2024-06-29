@@ -34,20 +34,22 @@ namespace catanafinals
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(60, 47);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 20);
+            this.textBox1.Size = new System.Drawing.Size(196, 20);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(60, 86);
+            this.textBox2.Location = new System.Drawing.Point(60, 137);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(163, 20);
+            this.textBox2.Size = new System.Drawing.Size(196, 20);
             this.textBox2.TabIndex = 1;
             // 
             // label1
@@ -62,7 +64,7 @@ namespace catanafinals
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 70);
+            this.label2.Location = new System.Drawing.Point(57, 121);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 13);
             this.label2.TabIndex = 3;
@@ -70,7 +72,7 @@ namespace catanafinals
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(96, 123);
+            this.button1.Location = new System.Drawing.Point(114, 163);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 37);
             this.button1.TabIndex = 4;
@@ -78,17 +80,41 @@ namespace catanafinals
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Admin",
+            "User",
+            "ShitHead"});
+            this.comboBox1.Location = new System.Drawing.Point(60, 97);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(196, 21);
+            this.comboBox1.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(57, 81);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "USERROLE";
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 199);
+            this.ClientSize = new System.Drawing.Size(317, 242);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "LogIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogIn";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -102,5 +128,7 @@ namespace catanafinals
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
     }
 }

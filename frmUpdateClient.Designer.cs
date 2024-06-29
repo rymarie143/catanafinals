@@ -138,6 +138,7 @@ namespace catanafinals
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmUpdateClient";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmUpdateClient";
             this.Load += new System.EventHandler(this.frmUpdateClient_Load);
             this.ResumeLayout(false);

@@ -5,11 +5,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="9952f39a825242af968080e459aa13b4" Name="Diagram1">
-        <EntityTypeShape EntityType="catanaswordModel.ClientInfo" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="catanaswordModel.ClientLoan" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="catanaswordModel.CLINETINFO" Width="1.5" PointX="5.375" PointY="0.75" />
         <EntityTypeShape EntityType="catanaswordModel.Schedule" Width="1.5" PointX="5.5" PointY="3.375" />
         <EntityTypeShape EntityType="catanaswordModel.Transact" Width="1.5" PointX="7.25" PointY="1.75" />
+        <EntityTypeShape EntityType="catanaswordModel.LoanUserAccount" Width="1.5" PointX="1" PointY="2.875" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

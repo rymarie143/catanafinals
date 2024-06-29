@@ -13,6 +13,15 @@ namespace catanafinals
 {
     public partial class Form1 : Form
     {
+        private int _UserID;
+        string UserRole, temp;
+
+        
+        public Form1(string UserRole, int UserID) : this()
+        {
+            temp = UserRole;
+            _UserID = UserID;
+        }
         public Form1()
         {
             InitializeComponent();
@@ -57,6 +66,20 @@ namespace catanafinals
         private void button3_Click(object sender, EventArgs e)
         {
             openChildForm(new Form3());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            LogIn n = new LogIn();
+            this.Hide();
+            n.ShowDialog();
+            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            createaccount n = new createaccount();
+            n.ShowDialog();
         }
 
         private void Form1_Load(object sender, EventArgs e)

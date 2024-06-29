@@ -31,10 +31,10 @@ namespace catanafinals
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.transactBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.paymentTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paymentAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.transactionDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.transactBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -57,10 +57,6 @@ namespace catanafinals
             this.dataGridView1.Size = new System.Drawing.Size(346, 326);
             this.dataGridView1.TabIndex = 0;
             // 
-            // transactBindingSource
-            // 
-            this.transactBindingSource.DataSource = typeof(catanafinals.entities.Transact);
-            // 
             // paymentTypeDataGridViewTextBoxColumn
             // 
             this.paymentTypeDataGridViewTextBoxColumn.DataPropertyName = "PaymentType";
@@ -82,6 +78,10 @@ namespace catanafinals
             this.transactionDateDataGridViewTextBoxColumn.Name = "transactionDateDataGridViewTextBoxColumn";
             this.transactionDateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // transactBindingSource
+            // 
+            this.transactBindingSource.DataSource = typeof(catanafinals.entities.Transact);
+            // 
             // frmTransactionHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -89,6 +89,7 @@ namespace catanafinals
             this.ClientSize = new System.Drawing.Size(377, 364);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmTransactionHistory";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmTransactionHistory";
             this.Load += new System.EventHandler(this.frmTransactionHistory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
